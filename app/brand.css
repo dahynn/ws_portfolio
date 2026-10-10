@@ -11,7 +11,20 @@
 #introduction.cover-page { --cover-rule:#d8e2ee; background:#f2f6fb; grid-template-columns:minmax(0,38%) minmax(0,62%); }
 #introduction .profile-intro { background:#fff; padding-inline:clamp(2rem,5vw,5.5rem); }
 #introduction .profile-details { background:#f2f6fb; padding-inline:clamp(2.5rem,5vw,5.5rem); }
-#introduction .profile-details::before { top:auto; right:-6rem; bottom:-8rem; width:24rem; height:24rem; border:1px solid #004a9314; box-shadow:0 0 0 3.3rem #004a9305,0 0 0 7.2rem #004a9303; animation:none; }
+#introduction .profile-details::before {
+  top:auto;
+  right:-4rem;
+  bottom:-5rem;
+  width:clamp(24rem,45vw,42rem);
+  height:clamp(24rem,45vw,42rem);
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  background:url('/assets/favicon-master.png') center / contain no-repeat;
+  opacity:.045;
+  transform:none;
+  animation:none;
+}
 #introduction .profile-details::after { display:none; }
 #introduction .cover-eyebrow { color:var(--brand-blue); margin:0 0 1.5rem; font-size:.7rem; letter-spacing:.16em; line-height:1.6; }
 #introduction .profile-details>h1 { display:block; color:#142b43; font-size:clamp(2.25rem,3.3vw,3.6rem); line-height:1.32; letter-spacing:-.055em; }
