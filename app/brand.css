@@ -84,3 +84,36 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--brand-blue); outl
 .project-store .store-scroll svg { color:currentColor; }
 .project-store .store-scroll:hover { color:#fff; background:var(--brand-blue); border-color:var(--brand-blue); }
 .project-store .store-scroll:focus-visible { outline:2px solid var(--brand-blue); outline-offset:3px; }
+
+/* Two editorial lines retain the original cover's offset and drawn emphasis. */
+#introduction .profile-details>h1 { line-height:1.45; }
+#introduction .profile-details>h1>.hero-line-opening { font-size:clamp(1.4rem,3vw,3rem); animation:hero-line-enter .65s ease-out both; }
+#introduction .profile-details>h1>.hero-line-ending { margin:.08em 0 0 clamp(1rem,3vw,3rem); font-size:clamp(1.9rem,3.45vw,3.5rem); animation:hero-line-enter .65s .16s ease-out both; }
+#introduction .hero-trace { position:relative; display:inline-block; isolation:isolate; }
+#introduction .hero-trace::after { content:''; position:absolute; z-index:-1; left:-.04em; right:-.05em; bottom:.11em; height:.55em; background:var(--brand-blue); opacity:.12; clip-path:polygon(0 12%,98% 0,100% 86%,2% 100%); transform:scaleX(0); transform-origin:left; animation:hero-marker-draw .7s .45s cubic-bezier(.2,.7,.2,1) forwards; }
+#introduction .hero-trace-line { position:absolute; left:-4%; bottom:-.11em; width:108%; height:.24em; overflow:visible; fill:none; stroke:var(--brand-blue); stroke-width:2.4; stroke-linecap:round; }
+#introduction .hero-trace-line path { stroke-dasharray:1; stroke-dashoffset:1; animation:hero-underline-draw .8s .55s ease-out forwards; }
+@keyframes hero-line-enter { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+@keyframes hero-marker-draw { to { transform:scaleX(1); } }
+@keyframes hero-underline-draw { to { stroke-dashoffset:0; } }
+@media (max-width:760px) {
+  #introduction .profile-details>h1>.hero-line-opening { font-size:clamp(1rem,5vw,1.8rem); }
+  #introduction .profile-details>h1>.hero-line-ending { margin-left:.8rem; font-size:clamp(1.5rem,6.5vw,2.3rem); }
+}
+@media (prefers-reduced-motion:reduce) {
+  #introduction .profile-details>h1>.hero-line { animation:none; }
+  #introduction .hero-trace::after { animation:none; transform:scaleX(1); }
+  #introduction .hero-trace-line path { animation:none; stroke-dashoffset:0; }
+}
+
+/* Section titles share one compact type scale in Korean and English. */
+#journey .journey-heading h2,
+#profile-record .profile-record-heading h2,
+#projects.project-store .index-heading h2 {
+  font-family:'Pretendard Variable',Pretendard,sans-serif;
+  font-size:clamp(1.375rem,1.8vw,1.625rem);
+  font-weight:750;
+  line-height:1.4;
+  letter-spacing:-.045em;
+  max-width:none;
+}
