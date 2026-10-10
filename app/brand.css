@@ -78,3 +78,9 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--brand-blue); outl
   .journey-destination img { width:140px; max-width:65%; margin-bottom:.75rem; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+/* Shared project links follow the portfolio CI palette. */
+.project-store .store-scroll { color:var(--brand-blue); background:#edf4fb; border-color:#bfd3e7; }
+.project-store .store-scroll svg { color:currentColor; }
+.project-store .store-scroll:hover { color:#fff; background:var(--brand-blue); border-color:var(--brand-blue); }
+.project-store .store-scroll:focus-visible { outline:2px solid var(--brand-blue); outline-offset:3px; }
