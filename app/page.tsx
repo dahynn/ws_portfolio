@@ -107,7 +107,7 @@ export default function Home() {
           </section>
         </div>
         <div className="profile-details">
-          <h1 id="portfolio-title"><span>업무의 흐름을 읽고,</span><span><em>더 나은 방식</em>을</span><span>구현하는 개발자<span className="title-colon" aria-hidden="true">:</span></span></h1>
+          <h1 id="portfolio-title" aria-label="문제의 시작부터 해결의 끝까지 따라가는 개발자"><span>문제의 시작부터</span><span>해결의 <em>끝까지</em></span><span>따라가는 개발자<span className="title-colon" aria-hidden="true">:</span></span></h1>
           <PersonalStrengths />
         </div>
         <BrandLogo />
