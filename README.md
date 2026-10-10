@@ -37,11 +37,13 @@ npm run build:pages
 
 ## 콘텐츠 및 디자인
 
-기존 프로젝트 상세와 경험을 바탕으로 표지, 개발 여정, 일하는 기준을 지원 직무에 맞춰 구성했습니다. 회사의 핵심가치와 개인의 프로젝트 경험은 구분해서 표현합니다.
+기존 프로젝트 상세와 경험을 바탕으로 표지, 개발 여정, 일하는 기준을 지원 직무에 맞춰 구성했습니다. 공식 채용 인재상과 개인의 프로젝트 경험은 구분해서 표현합니다.
 
-- CI 및 핵심가치 출처: [공식 경영이념·CI](http://www.wsgroup.co.kr/m12.php)
+- 인재상: [공식 채용 페이지](https://woosung.recruiter.co.kr/career/Talent1) — 자기주도성, 문제해결 실행력, 실험정신, 학습민첩성, 전략적 협업능력
+- CI 출처: [공식 경영이념·CI](http://www.wsgroup.co.kr/m12.php)
 - CI: Blue `#004A93`, Red `#E42613` (공식 페이지 색상 견본 기준)
 - 로고: 사용자 제공 PNG, 비율 유지
+- 파비콘: 사용자 제공 W: 심볼을 고해상도로 보정한 투명 PNG (32·192·512px 및 Apple 180px)
 - 제목 서체: SUIT ExtraBold, SIL Open Font License (`public/assets/fonts/SUIT-OFL.txt`)
 - 본문: Pretendard
 - Pages 구성: [GitHub 공식 문서](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)

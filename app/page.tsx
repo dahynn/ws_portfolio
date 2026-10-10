@@ -67,7 +67,7 @@ const skillGroups = [
   { category: 'Frontend', items: [{ name: 'React', level: 4, icon: '/assets/tech-icons/react.svg' }, { name: 'Vue.js', level: 3, icon: 'https://cdn.simpleicons.org/vuedotjs/4FC08D' }, { name: 'Next.js', level: 2, icon: 'https://cdn.simpleicons.org/nextdotjs/343940' }, { name: 'TypeScript', level: 3, icon: '/assets/tech-icons/typescript.svg' }] },
   { category: 'Data', items: [{ name: 'SQL', level: 3, icon: '/assets/tech-icons/sql.svg' }, { name: 'PostgreSQL', level: 3, icon: '/assets/tech-icons/postgresql.svg' }, { name: 'Redis', level: 4, icon: '/assets/tech-icons/redis.svg' }] },
   { category: 'Infrastructure', items: [{ name: 'AWS', level: 2, icon: 'https://api.iconify.design/logos/aws.svg' }, { name: 'Docker', level: 2, icon: 'https://cdn.simpleicons.org/docker/2496ED' }] },
-  { category: 'Tools', items: [{ name: 'Jira', level: 2, icon: 'https://cdn.simpleicons.org/jira/0052CC' }, { name: 'Notion', level: 3, icon: 'https://cdn.simpleicons.org/notion/343940' }, { name: 'Harness', level: 2, icon: 'https://api.iconify.design/logos/harness.svg' }] },
+  { category: 'Tools', items: [{ name: 'Figma', level: 4, icon: '/assets/tech-icons/figma.svg' }, { name: 'Jira', level: 2, icon: 'https://cdn.simpleicons.org/jira/0052CC' }, { name: 'Notion', level: 3, icon: 'https://cdn.simpleicons.org/notion/343940' }, { name: 'Harness', level: 2, icon: 'https://api.iconify.design/logos/harness.svg' }] },
 ];
 const skillLevelLabels = ['기초', '초급', '중급', '고급', '전문가'];
 
@@ -132,8 +132,7 @@ export default function Home() {
                 className={`journey-dot ${
                   activity.education || activity.title === '동국대학교' || activity.title === 'University of Lancashire' ? 'education-node'
                     : activity.title === '삼성청년SW·AI 아카데미 14기' ? 'ssafy-node'
-                      : activity.title === "IT 소모임장 'ProMIS'" ? 'initiative-node'
-                        : 'default-node'
+                      : 'default-node'
                 }`}
                 aria-hidden="true"
               />

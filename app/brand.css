@@ -23,7 +23,7 @@
 #introduction .profile-role { color:var(--brand-blue); font-size:.92rem; letter-spacing:-.02em; }
 #introduction .personal-strengths { max-width:none; margin-top:clamp(1.8rem,4vh,3rem); padding-top:1rem; border-top:1px solid var(--cover-rule); background:transparent; border-radius:0; box-shadow:none; }
 #introduction .strengths-label { margin:0 0 .4rem; color:#6b7d90; font-size:.63rem; font-weight:750; letter-spacing:.12em; }
-#introduction .personal-strengths li,#introduction .personal-strengths li:first-child { grid-template-columns:28px minmax(0,1fr); gap:.8rem; padding:.9rem 0; background:transparent; }
+#introduction .personal-strengths li,#introduction .personal-strengths li:first-child { grid-template-columns:28px minmax(0,1fr); gap:.8rem; padding:.6rem 0; background:transparent; }
 #introduction .strength-marker { display:block; color:var(--brand-red); font-size:.72rem; font-weight:800; font-variant-numeric:tabular-nums; margin:0; align-self:start; padding-top:.2rem; }
 #introduction .personal-strengths h3 { display:flex; flex-wrap:wrap; align-items:baseline; column-gap:.7rem; color:#233c55; font-size:.94rem; line-height:1.4; }
 #introduction .personal-strengths h3 span { color:var(--brand-blue); font-size:.73rem; letter-spacing:.02em; }
@@ -31,10 +31,12 @@
 #introduction .cover-next { left:69%; color:var(--brand-blue); }
 #introduction .page-number { color:#8797a8; }
 .journey-heading h2 { max-width:100%; font-size:clamp(1.8rem,3vw,2.8rem); }
-.journey-destination img { width:180px; height:auto; max-width:48%; }
-.journey-destination p { color:#6b7d90; }
+.journey-destination { --destination-copy-size:clamp(.875rem,1.05vw,1rem); padding:1.5rem 0 .5rem 3rem; gap:1.1rem; }
+.journey-destination::before { display:block; top:0; left:0; width:2rem; height:calc(1.5rem + 1.65 * var(--destination-copy-size) + 1px); border-left:2px solid var(--brand-blue); border-bottom:2px solid var(--brand-blue); border-bottom-left-radius:1rem; }
+.journey-destination img { width:180px; height:auto; max-width:48%; margin:0; }
+.journey-destination p { color:#6b7d90; font-size:var(--destination-copy-size); }
 .journey-destination strong { color:var(--brand-blue); }
-.journey-dot.initiative-node { background:var(--brand-red); border-color:var(--brand-red); }
+
 .profile-record-heading h2 { max-width:38rem; }
 a:focus-visible,button:focus-visible { outline:2px solid var(--brand-blue); outline-offset:4px; }
 @media (max-width:1100px) and (min-width:761px) {
@@ -54,11 +56,12 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--brand-blue); outl
   #introduction .cover-eyebrow { margin-bottom:1.1rem; font-size:.58rem; }
   #introduction .brand-logo { top:1rem; right:1.5rem; width:128px; height:26px; }
   #introduction .personal-strengths { margin-top:1.75rem; }
-  #introduction .personal-strengths li,#introduction .personal-strengths li:first-child { padding:.85rem 0; }
+  #introduction .personal-strengths li,#introduction .personal-strengths li:first-child { padding:.65rem 0; }
   #introduction .personal-strengths h3 { font-size:.94rem; }
   #introduction .personal-strengths p { font-size:.8rem; }
   #introduction .cover-next { left:50%; }
   .journey-heading h2 { max-width:19rem; font-size:1.9rem; line-height:1.35; word-break:keep-all; }
+  .journey-destination::before { height:calc(1.5rem + 9.9px); }
   .journey-destination img { width:140px; max-width:65%; margin-bottom:.75rem; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
