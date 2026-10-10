@@ -97,7 +97,7 @@ export default function Home() {
         <div className="profile-intro">
           <div className="photo-slot"><img src="/assets/profile.png" alt="유다현 프로필 사진" fetchPriority="high" decoding="async" /></div>
           <p className="profile-name">유다현</p>
-          <p className="profile-role">IT / AX · 풀스택 개발자</p>
+          <p className="profile-role">IT / AX</p>
           <section className="profile-contact" aria-labelledby="profile-contact-title">
             <h2 id="profile-contact-title">Contact</h2>
             <dl>
@@ -107,7 +107,6 @@ export default function Home() {
           </section>
         </div>
         <div className="profile-details">
-          <p className="cover-eyebrow">DEVELOPMENT FOR BETTER WORK</p>
           <h1 id="portfolio-title"><span>업무의 흐름을 읽고,</span><span><em>더 나은 방식</em>을</span><span>구현하는 개발자<span className="title-colon" aria-hidden="true">:</span></span></h1>
           <PersonalStrengths />
         </div>
@@ -157,8 +156,8 @@ export default function Home() {
         <p className="page-number">03</p>
         <header className="profile-record-heading">
           <p className="eyebrow section-kicker">Profile record</p>
-          <h2 id="profile-record-title">사용자 화면부터 데이터 처리까지, 흐름을 연결했습니다.</h2>
-          <p>React로 사용자의 작업 흐름을 만들고, Spring Boot로 API와 데이터 처리를 연결했습니다. 요청이 겹치는 상황과 외부 승인 후 내부 저장이 실패하는 상황을 재현하며, 결과의 일관성과 복구 과정을 확인했습니다. 검색과 AI 분석을 연동한 경험을 바탕으로, 현장의 요구를 이해하고 실제 업무에 도움이 되는 시스템을 만들고 싶습니다.</p>
+          <h2 id="profile-record-title">기능 구현에서 멈추지 않고, 처리 결과와 복구까지 확인했습니다.</h2>
+          <p>프로젝트에서 결제 승인 후 저장 실패와 동시 요청 충돌을 재현하고, 처리 결과의 일관성과 복구 과정을 검증했습니다. AI 요약은 같은 입력으로 순차·병렬 처리를 비교해 개선 효과를 측정했습니다. 입사 후에는 사내 시스템과 인프라의 구조를 익히고, 현업의 요구를 파악해 안정적인 운영과 데이터·AI 기반 업무 개선에 기여하겠습니다.</p>
         </header>
         <div className="profile-record-grid">
           <div className="profile-record-history">
