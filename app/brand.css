@@ -1,0 +1,64 @@
+@font-face {
+  font-family:'Portfolio Display';
+  src:url('/assets/fonts/SUIT-ExtraBold.woff2') format('woff2');
+  font-weight:700 900;
+  font-style:normal;
+  font-display:swap;
+}
+:root { --brand-blue:#004a93; --brand-red:#e42613; --orange:var(--brand-blue); --cream:#f5f7fa; }
+.brand-logo { width:156px; height:32px; }
+.brand-logo img { object-fit:contain; filter:none; }
+#introduction.cover-page { --cover-rule:#d8e2ee; background:#f2f6fb; grid-template-columns:minmax(0,38%) minmax(0,62%); }
+#introduction .profile-intro { background:#fff; padding-inline:clamp(2rem,5vw,5.5rem); }
+#introduction .profile-details { background:#f2f6fb; padding-inline:clamp(2.5rem,5vw,5.5rem); }
+#introduction .profile-details::before { top:auto; right:-6rem; bottom:-8rem; width:24rem; height:24rem; border:1px solid #004a9314; box-shadow:0 0 0 3.3rem #004a9305,0 0 0 7.2rem #004a9303; animation:none; }
+#introduction .profile-details::after { display:none; }
+#introduction .cover-eyebrow { color:var(--brand-blue); margin:0 0 1.5rem; font-size:.7rem; letter-spacing:.16em; line-height:1.6; }
+#introduction .profile-details>h1 { display:block; color:#142b43; font-size:clamp(2.25rem,3.3vw,3.6rem); line-height:1.32; letter-spacing:-.055em; }
+#introduction .profile-details>h1>span { display:block; white-space:nowrap; }
+#introduction .profile-details>h1 em { color:var(--brand-blue); font-style:normal; }
+#introduction .title-colon { color:var(--brand-red); margin-left:.06em; }
+#introduction .brand-logo { width:156px; height:32px; top:1.5rem; right:clamp(2rem,5vw,5.5rem); }
+#introduction .brand-logo img { filter:none; }
+#introduction .profile-role { color:var(--brand-blue); font-size:.92rem; letter-spacing:-.02em; }
+#introduction .personal-strengths { max-width:none; margin-top:clamp(1.8rem,4vh,3rem); padding-top:1rem; border-top:1px solid var(--cover-rule); background:transparent; border-radius:0; box-shadow:none; }
+#introduction .strengths-label { margin:0 0 .4rem; color:#6b7d90; font-size:.63rem; font-weight:750; letter-spacing:.12em; }
+#introduction .personal-strengths li,#introduction .personal-strengths li:first-child { grid-template-columns:28px minmax(0,1fr); gap:.8rem; padding:.9rem 0; background:transparent; }
+#introduction .strength-marker { display:block; color:var(--brand-red); font-size:.72rem; font-weight:800; font-variant-numeric:tabular-nums; margin:0; align-self:start; padding-top:.2rem; }
+#introduction .personal-strengths h3 { display:flex; flex-wrap:wrap; align-items:baseline; column-gap:.7rem; color:#233c55; font-size:.94rem; line-height:1.4; }
+#introduction .personal-strengths h3 span { color:var(--brand-blue); font-size:.73rem; letter-spacing:.02em; }
+#introduction .personal-strengths p { color:#627386; font-size:.82rem; line-height:1.6; }
+#introduction .cover-next { left:69%; color:var(--brand-blue); }
+#introduction .page-number { color:#8797a8; }
+.journey-heading h2 { max-width:100%; font-size:clamp(1.8rem,3vw,2.8rem); }
+.journey-destination img { width:180px; height:auto; max-width:48%; }
+.journey-destination p { color:#6b7d90; }
+.journey-destination strong { color:var(--brand-blue); }
+.journey-dot.initiative-node { background:var(--brand-red); border-color:var(--brand-red); }
+.profile-record-heading h2 { max-width:38rem; }
+a:focus-visible,button:focus-visible { outline:2px solid var(--brand-blue); outline-offset:4px; }
+@media (max-width:1100px) and (min-width:761px) {
+  #introduction.cover-page { grid-template-columns:minmax(0,35%) minmax(0,65%); }
+  #introduction .profile-intro { padding-inline:2rem; }
+  #introduction .profile-details { padding-inline:2.25rem; }
+  #introduction .profile-details>h1 { font-size:clamp(1.9rem,3.4vw,2.7rem); }
+}
+@media (max-width:760px) {
+  #introduction.cover-page { grid-template-columns:1fr; grid-template-rows:auto auto; }
+  #introduction .profile-intro { padding:4.5rem 1.5rem 2rem; }
+  #introduction .photo-slot { width:140px; }
+  #introduction .profile-name { font-size:2rem; margin-top:.75rem; }
+  #introduction .profile-contact { margin-top:1.5rem; }
+  #introduction .profile-details { padding:2.5rem 1.5rem 5rem; }
+  #introduction .profile-details>h1 { font-size:clamp(1.65rem,6.5vw,2.5rem); }
+  #introduction .cover-eyebrow { margin-bottom:1.1rem; font-size:.58rem; }
+  #introduction .brand-logo { top:1rem; right:1.5rem; width:128px; height:26px; }
+  #introduction .personal-strengths { margin-top:1.75rem; }
+  #introduction .personal-strengths li,#introduction .personal-strengths li:first-child { padding:.85rem 0; }
+  #introduction .personal-strengths h3 { font-size:.94rem; }
+  #introduction .personal-strengths p { font-size:.8rem; }
+  #introduction .cover-next { left:50%; }
+  .journey-heading h2 { max-width:19rem; font-size:1.9rem; line-height:1.35; word-break:keep-all; }
+  .journey-destination img { width:140px; max-width:65%; margin-bottom:.75rem; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
