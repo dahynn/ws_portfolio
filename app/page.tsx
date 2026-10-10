@@ -119,6 +119,7 @@ export default function Home() {
         <BrandLogo />
         <p className="page-number">02</p>
         <div className="journey-heading">
+          <p className="eyebrow section-kicker">MY JOURNEY</p>
           <h2 id="journey-title">우성 IT/AX를 향한 여정</h2>
         </div>
         <div className="journey-map">
