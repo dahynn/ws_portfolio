@@ -117,3 +117,17 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--brand-blue); outl
   letter-spacing:-.045em;
   max-width:none;
 }
+
+/* Official talent artwork, paired with concise personal experience. */
+#introduction .talent-gallery { margin-top:clamp(1.6rem,4vh,2.5rem); }
+#introduction .talent-gallery ol { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(.8rem,1.8vw,1.5rem); padding:0; margin:1rem 0 0; list-style:none; }
+#introduction .talent-gallery li,
+#introduction .talent-gallery li:first-child { display:block; padding:0; margin:0; border:0; background:transparent; }
+#introduction .talent-gallery figure { margin:0; }
+#introduction .talent-gallery img { display:block; width:100%; max-width:126px; height:150px; margin:0 auto; object-fit:contain; mix-blend-mode:multiply; }
+#introduction .talent-gallery figcaption { margin:.85rem auto 0; max-width:12rem; color:#627386; font-size:.75rem; font-weight:500; line-height:1.65; letter-spacing:-.025em; word-break:keep-all; }
+@media (max-width:760px) {
+  #introduction .talent-gallery ol { gap:.75rem; }
+  #introduction .talent-gallery img { height:clamp(88px,24vw,126px); }
+  #introduction .talent-gallery figcaption { font-size:.69rem; line-height:1.6; }
+}
