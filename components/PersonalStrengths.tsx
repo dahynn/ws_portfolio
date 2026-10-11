@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const strengths = [
   { title: '긍정', english: 'Positive', image: 'positive', width: 1485, description: '실패 상황을 재현하고, 해결 방법을 찾아 다시 검증합니다.' },
   { title: '혁신', english: 'Innovation', image: 'creative', width: 1564, description: 'AI 요약의 순차·병렬 처리를 비교하며 더 나은 방식을 찾았습니다.' },
@@ -9,7 +11,7 @@ export function PersonalStrengths() {
     <p className="strengths-label">HOW I WORK</p>
     <ol>{strengths.map(strength => <li key={strength.title}>
       <figure>
-        <img src={`/assets/talent/${strength.image}.png`} alt={`${strength.english} · ${strength.title}`} width={strength.width} height="1756" decoding="async" />
+        <Image unoptimized src={`/assets/talent/${strength.image}.png`} alt={`${strength.english} · ${strength.title}`} width={strength.width} height={1756} decoding="async" />
         <figcaption>{strength.description}</figcaption>
       </figure>
     </li>)}</ol>
